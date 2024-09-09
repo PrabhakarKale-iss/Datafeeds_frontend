@@ -1,0 +1,32 @@
+/* src/components/Hero.css */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../../../public/logo512.png') no-repeat center center/cover;
+    /* color: white; */
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #21a1f1;
+  }
+  
