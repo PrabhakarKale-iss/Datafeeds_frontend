@@ -1,27 +1,42 @@
-/* src/components/Features.css */
-.features {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .features-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .feature {
-    text-align: center;
-    padding: 20px;
-    width: 30%;
-  }
-  
-  .feature h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .feature p {
-    font-size: 1em;
-    color: #666;
-  }
-  
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px;
+  max-height: 400px;
+  width: 800px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: left; /* Align text to the left */
+  border: 1px solid #000;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left; /* Left-align the folder title */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  text-align: left; /* Left-align list items */
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

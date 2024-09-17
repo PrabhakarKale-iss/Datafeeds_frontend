@@ -3,24 +3,30 @@ import React from 'react';
 import './css/Features.css';
 
 function Features() {
+  const folders = Array.from({ length: 30 }, (_, index) => ({
+    name: `Folder ${index + 1}`,
+    links: [
+      { name: `File ${index + 1}A`, url: "#" },
+      { name: `File ${index + 1}B`, url: "#" },
+      { name: `File ${index + 1}C`, url: "#" }
+    ]
+  }));
+
   return (
-    <section className="features" id="features">
-      <h2>Features</h2>
-      <div className="features-container">
-        <div className="feature">
-          <h3>Feature 1</h3>
-          <p>Description of feature 1</p>
+    <div className="container">
+      {folders.map((folder, index) => (
+        <div className="box" key={index}>
+          <h3>{folder.name}</h3>
+          <ul>
+            {folder.links.map((link, idx) => (
+              <li key={idx}>
+                <a href={link.url}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="feature">
-          <h3>Feature 2</h3>
-          <p>Description of feature 2</p>
-        </div>
-        <div className="feature">
-          <h3>Feature 3</h3>
-          <p>Description of feature 3</p>
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 }
 
