@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import ClientForm from './components/ClientForm';
 
 function App() {
   // const [data, setData] = useState([]);
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/features" element={<Features />} />
+          <Route path="/clientform" element={<ClientForm />} />
           {/* <Route path="/footer" element={<Footer />} /> */}
         </Routes>
         <Footer />

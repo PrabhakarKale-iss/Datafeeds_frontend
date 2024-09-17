@@ -11,7 +11,7 @@ function Header() {
                     {/* Use Link components instead of anchor tags */}
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/features">Features</Link></li>
-                    {/* <li><Link to="/footer">Contact</Link></li> */}
+                    <li><Link to="/clientform">ClientForm</Link></li>
                     <li>Contact</li>
                 </ul>
             </nav>
